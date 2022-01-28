@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <input type="file" class="input" />
+      <button class="btn">submit</button>
+    </div>
+    <script>
+      let obj = {};
+      let inpt = document.querySelector(".input");
+      let btn = document.querySelector(".btn");
+      let main = document.querySelector(".wrap");
+
+      btn.addEventListener("click", function () {
+        // main.innerHTML += inpt.value;
+        obj.image = inpt.value;
+        console.log(obj);
+      });
+    </script>
+  </body>
+</html>
