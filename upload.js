@@ -94,6 +94,13 @@ function bringForm() {
   layer = document.createElement("div");
   layer.classList.add("mask1");
   bd.appendChild(layer);
+  layer.addEventListener("click", function(){
+    uploadForm.classList.remove("slide-down");
+    layer.classList.add("hide");
+  layer.addEventListener("transitionend", function () {
+    layer.remove();
+  });
+  })
 }
 
 // upload form disappearing
